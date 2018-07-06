@@ -16,13 +16,21 @@ Technologies used:
 •	As a user, I need to be able to identify the company (logo/branding) 
 
 •	As a user, I need to be able to create an account 
+
 •	As a user, I need to be able to login to my account 
+
 •	As a user, I need to be able to post a picture 
+
 •	As a user, I need to be able to log information about the mountain 
+
 •	As a user, I need to be able to create, read, update, and delete data 
+
 •	As a user, I need to be able to keep a log of my past data 
+
 •	As a user, I need to be able to view other user logs 
+
 •	As a user, I need to be able to search the weather at the top of the page 
+
 •	As a user, I need to be able to create a secure password
 
 A stretch goal for this project is to include a redone version of the weather API I used in my Q1 project.
