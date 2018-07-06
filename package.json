@@ -1,0 +1,28 @@
+{
+  "name": "q2-project",
+  "version": "1.0.0",
+  "description": "For my Q2 project, I am creating an application to allow users to input data from their day on the mountain. This application will attract people who enjoy snowboarding or skiing in any location. I will include an account login page to allow users to keep a log of their data and past trips. I will also allow users to create, read, update, and delete data.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkborgstrom/Q2-Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkborgstrom/Q2-Project/issues"
+  },
+  "homepage": "https://github.com/rkborgstrom/Q2-Project#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "config": "^1.30.0",
+    "express": "^4.16.3",
+    "knex": "^0.15.0",
+    "morgan": "^1.9.0",
+    "pg": "^7.4.3"
+  }
+}

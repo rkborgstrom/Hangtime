@@ -2,6 +2,7 @@
  # Q2-Project Description
 
 For my Q2 project, I am creating an application to allow users to input data from their day on the mountain. This application will attract people who enjoy snowboarding or skiing in any location. I will include an account login page to allow users to keep a log of their data and past trips. I will also allow users to create, read, update, and delete data.
+
 Technologies used: 
   HTML 
   CSS 
