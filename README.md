@@ -24,6 +24,9 @@ Technologies used:
  
  A stretch goal for this project is to include a redone version of the weather API I used in my Q1 project. 
  
- ![Create Account](CreateAccount.jpg)
+#mockups
+![Create Account](/Users/ryanborgstrom 1/_galvanizeprojects/Q2-Project/Images/CreateAccount.jpg)
   
+![Forms](/Users/ryanborgstrom 1/_galvanizeprojects/Q2-Project/Images/Forms.jpg)
 
+![Show Data](/Users/ryanborgstrom 1/_galvanizeprojects/Q2-Project/Images/ShowData.jpg)
