@@ -1,0 +1,24 @@
+body 
+    {
+        background: url('/Users/ryanborgstrom 1/_galvanizeprojects/Q2-Project/images/hangtime.jpg') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+        height:100%;
+    }
+
+    .formsBox {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        margin-top: 8%;
+        background-color: #4893cc;
+        opacity: 0.8;
+        padding-bottom: 30px;
+    }
+
+    h1 {
+        color: white;
+    }
