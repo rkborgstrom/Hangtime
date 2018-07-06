@@ -13,6 +13,7 @@ Technologies used:
   Database
   
 •	As a user, I need to be able to identify the company (logo/branding) 
+
 •	As a user, I need to be able to create an account 
 •	As a user, I need to be able to login to my account 
 •	As a user, I need to be able to post a picture 
@@ -26,8 +27,8 @@ Technologies used:
 A stretch goal for this project is to include a redone version of the weather API I used in my Q1 project.
 
 #mockups
-![Create Account](/Users/ryanborgstrom 1/_galvanizeprojects/Q2-Project/images/CreateAccount.jpg)
+![Create Account](https://github.com/rkborgstrom/Q2-Project/blob/master/images/CreateAccount.jpg)
   
-![Forms](/Users/ryanborgstrom 1/_galvanizeprojects/Q2-Project/images/Forms.jpg)
+![Forms](https://github.com/rkborgstrom/Q2-Project/blob/master/images/Forms.jpg)
 
-![Show Data](/Users/ryanborgstrom 1/_galvanizeprojects/Q2-Project/images/ShowData.jpg)
+![Show Data](https://github.com/rkborgstrom/Q2-Project/blob/master/images/ShowData.jpg)
