@@ -10,7 +10,7 @@ let port = process.env.PORT || 8000;
 let knex = require('knex')(config);
 let morgan = require('morgan');
 
-// let contracts = require('./routes/contracts');
+let login = require('./routes/login');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -23,25 +23,21 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res, next) => {
-    res.sendFile('index.html');
+    res.render('index');
 })
 
-// app.use(assassins);
-// app.use(contracts);
+
+
+// app.get('/', (req, res, next) => {
+//         res.sendFile('./index');
+//     })
+
+
+app.use(login);
 
 app.use((_req, res) => {
     res.sendStatus(404);
   });
-
-app.use((err, _req, res, _next) => {
-    if (err.status) {app.use(assassins);
-                                
-      return res
-        .status(err.status)
-        .set('Content-Type', 'text/plain')
-        .send(err.message);
-    }
-});
 
 app.listen(port, function () {
     console.log('Listening on port', port);

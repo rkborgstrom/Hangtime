@@ -5,7 +5,7 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      filename: 'postgres://localhost/Q2-Project'
+      filename: 'postgres://localhost/hangtime'
     }
   },
 
@@ -26,7 +26,7 @@ module.exports = {
   },
 
   production: {
-    client: 'postgresql',
+    client: 'pg',
     connection: {
       database: 'my_db',
       user:     'username',
