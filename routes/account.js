@@ -11,4 +11,21 @@ router.get('/account', (req, res) => {
   res.render('account', {title: 'Create An Account'}); //renders account ejs file
 });
 
+router.post('/account', (req, res, next) => {
+  knex('user_info')
+  .insert({
+      username: req.body.username,
+      email: req.body.email,
+      full_name: req.body.fullname,
+      password: req.body.password
+  }, '*')
+
+  .then((accounts) => {
+      res.send(accounts[0]);
+  })
+  .catch((err) => {
+      next(err);
+  });
+});
+
 module.exports = router;

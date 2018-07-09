@@ -4,10 +4,10 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('user_info').insert([
-        {username: 'ghostrider92'},
-        {email: 'ryan@gmail.com'},
-        {full_name: 'Ryan Borgstrom'},
-        {password: 'ryno94'},
+        {username: 'ghostrider92',
+        email: 'ryan@gmail.com',
+        full_name: 'Ryan Borgstrom',
+        password: 'ryno94'},
       ]);
     });
 };

@@ -7,12 +7,12 @@ let env = process.env.NODE_ENV || 'development';
 let config = require('../knexfile')[env];
 let knex = require('knex')(config);
 
-router.get('/index', (req, res) => {
-  res.render('index', {title: 'Home Page'}); //renders index ejs file
+router.get('/post', (req, res) => {
+  res.render('post', {title: 'Create An Account'}); //renders account ejs file
 });
 
-router.post('/index', (req, res, next) => {
-  knex('index')
+router.post('/post', (req, res, next) => {
+  knex('post')
       .insert({
           username: req.body.username,
           email: req.body.email,
@@ -20,13 +20,18 @@ router.post('/index', (req, res, next) => {
           password: req.body.age,
       }, '*')
 
-      .then((index) => {
-          res.send(index[0]);
+      .then((post) => {
+          res.send(post[0]);
       })
       .catch((err) => {
           next(err);
       });
 });
+
+
+
+
+
 
 
 module.exports = router;

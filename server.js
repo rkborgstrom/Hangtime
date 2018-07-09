@@ -11,6 +11,10 @@ let knex = require('knex')(config);
 let morgan = require('morgan');
 let index = require('./routes/index')
 let account = require('./routes/account');
+let login = require('./routes/login');
+let post = require('./routes/post');
+
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -35,6 +39,8 @@ app.get('/', (req, res, next) => {
 
 app.use(index);
 app.use(account);
+app.use(login);
+app.use(post);
 
 app.use((_req, res) => {
     res.sendStatus(404);
