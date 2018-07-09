@@ -9,8 +9,8 @@ let app = express();
 let port = process.env.PORT || 8000;
 let knex = require('knex')(config);
 let morgan = require('morgan');
-
-let login = require('./routes/login');
+let index = require('./routes/index')
+let account = require('./routes/account');
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
@@ -33,7 +33,8 @@ app.get('/', (req, res, next) => {
 //     })
 
 
-app.use(login);
+app.use(index);
+app.use(account);
 
 app.use((_req, res) => {
     res.sendStatus(404);
