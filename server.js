@@ -9,7 +9,7 @@ let app = express();
 let port = process.env.PORT || 8000;
 let knex = require('knex')(config);
 let morgan = require('morgan');
-let index = require('./routes/index')
+let index = require('./routes/index');
 let account = require('./routes/account');
 let login = require('./routes/login');
 let post = require('./routes/post');
@@ -24,31 +24,29 @@ app.use(morgan('short'));
 
 app.use(bodyParser.json());
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 app.get('/', (req, res, next) => {
     res.render('index');
 })
 
-
-
 // app.get('/', (req, res, next) => {
 //         res.sendFile('./index');
 //     })
 
-
-app.use(index);
+app.use('/index', index);
 app.use(account);
 app.use(login);
 app.use(post);
 
 app.use((_req, res) => {
     res.sendStatus(404);
-  });
+});
 
 app.listen(port, function () {
     console.log('Listening on port', port);
 });
 
 module.exports = app;
-

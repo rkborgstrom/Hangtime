@@ -7,8 +7,15 @@ let env = process.env.NODE_ENV || 'development';
 let config = require('../knexfile')[env];
 let knex = require('knex')(config);
 
-router.get('/index', (req, res) => {
-  res.render('index', {title: 'Home Page'}); //renders index ejs file
+router.get('/', (req, res, next) => {
+  knex('user_report')
+  .returning('*')
+  .then((user_report) => {
+      res.render('index', {user_report});
+  })
+  .catch((err) => {
+      next(err);
+  });
 });
 
 module.exports = router;
