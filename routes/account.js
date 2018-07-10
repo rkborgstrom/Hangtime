@@ -21,8 +21,9 @@ router.post('/account', (req, res, next) => {
   }, '*')
 
   .then((accounts) => {
-      res.send(accounts[0]);
+      res.render('index');
   })
+
   .catch((err) => {
       next(err);
   });

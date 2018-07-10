@@ -12,21 +12,25 @@ router.get('/post', (req, res) => {
 });
 
 router.post('/post', (req, res, next) => {
-  knex('post')
-      .insert({
-          username: req.body.username,
-          email: req.body.email,
-          full_name: req.body.weapon,
-          password: req.body.age,
-      }, '*')
-
-      .then((post) => {
-          res.send(post[0]);
-      })
-      .catch((err) => {
-          next(err);
-      });
-});
+    knex('user_report')
+    .insert({
+        //left side is database columns, right side is 'names' in ejs file 
+        picture_url: req.body.picture,
+        location: req.body.location,
+        snow_report: req.body.snowreport,
+        date: req.body.date,
+        time: req.body.time,
+      
+    }, '*')
+  
+    .then((accounts) => {
+        res.render('index');
+    })
+  
+    .catch((err) => {
+        next(err);
+    });
+  });
 
 
 

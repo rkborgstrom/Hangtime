@@ -12,23 +12,26 @@
         <div class="card">
           <img class="card-img-top" src="../images/park_city.jpg" alt="Card image cap">
           <div class="card-body">
-            <h5 class="card-title">Park City</h5>
+            <h5 class="card-title">Park City <%=data[i].visibility%></h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
               little bit longer.</p>
 
+              <% for (let i = 0; i<data.length; i++) { %>
+
             <section class="col-6 col-sm-3">
-              <strong>Snow Report:</strong>
+              <strong><%=data[i].snow_report%></strong>
             </section>
             <section class="col-6 col-sm-3">
-              <strong>Conditions:</strong>
+              <strong>Conditions: <%=data[i].visibility%></strong>
             </section>
             <section class="col-6 col-sm-3">
-              <strong>Date:</strong>
+              <strong>Date: <%=data[i].date%></strong>
             </section>
             <section class="col-6 col-sm-3">
-              <strong>Time:</strong>
+              <strong>Time: <%=data[i].time%></strong>
             </section>
           </div>
+          <%}%>
           <div class="card-footer" style="background-color: #efebda;">
             <small class="text-muted">Last updated 3 mins ago</small>
           </div>

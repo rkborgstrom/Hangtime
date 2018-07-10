@@ -1,7 +1,7 @@
 <% include partials/header %>
 
   <section class='bg'>
-    <form class="needs-validation" novalidate>
+    <form class="needs-validation" novalidate action="/post" method="POST">
       <section class="form-bg">
         <div class="form-row">
 
@@ -26,27 +26,32 @@
         </div>
         <div class="form-row">
           <div class="col-md-6 mb-3">
-            <label for="validationCustom03">City</label>
-            <input type="text" class="form-control" id="validationCustom03" placeholder="City" required>
-            <div class="invalid-feedback">
-              Please provide a valid city.
-            </div>
+            <label for="validationCustom03">Snow Report</label>
+            <input type="text" class="form-control" id="snowreport" name="snowreport" placeholder="e.g. 15 inches" required>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationCustom04">State</label>
-            <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+            <label for="date">Date</label>
+            <input type="date" class="form-control" id="date" name="date" placeholder="Date" required>
             <div class="invalid-feedback">
               Please provide a valid state.
             </div>
           </div>
           <div class="col-md-3 mb-3">
-            <label for="validationCustom05">Zip</label>
-            <input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+            <label for="time">Time</label>
+            <input type="time" class="form-control" id="time" name="time" placeholder="Zip" required>
             <div class="invalid-feedback">
               Please provide a valid zip.
             </div>
           </div>
-        </div>
+          <div class="custom-control custom-radio">
+              <input type="radio" id="powder" name="powder" class="custom-control-input">
+              <label class="custom-control-label" for="powder">Powder</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input type="radio" id="slushy" name="slushy" class="custom-control-input">
+              <label class="custom-control-label" for="slushy">Slushy</label>
+            </div>
+        </div><br>
         <button class="btn btn-primary" type="submit">Submit form</button>
       </section>
     </form>
