@@ -18,13 +18,21 @@ body {
 
 .title {
     color: white;
-    padding-left: 110px;
+    padding-left: 35px;
 }
 
 .form-bg {
-    width: 100%;
-    height: 400px;
+    margin: 10% 10%;
     background-color: white;
     padding: 40px 40px 40px;
     opacity: 0.8;
+}
+
+.container {
+    background-color: white;
+    opacity: 0.9;
+    width: 350px;
+    padding: 30px 30px 30px;
+    margin-top: 10%;
+    box-shadow: 5px 5px black;
 }

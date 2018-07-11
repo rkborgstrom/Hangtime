@@ -1,6 +1,6 @@
 <% include partials/header %>
 
-  <main class="bg">
+  <main class="container-fluid bg">
     <div class="title">
       <br>
       <h1>Connecting riders from around the world</h1>
@@ -11,32 +11,35 @@
       <% for(data of user_report) { %>
         <div class="col-6 mb-5 pr-5 pl-5">
           <div class="card">
-            <img class="card-img-top" src="../images/park_city.jpg" alt="Card image cap">
+            <img class="card-img-top" href="<%=data.picture_url%>" src="<%=data.picture_url%>">
             <div class="card-body">
-              <h5 class="card-title">Park City
-                <%=data.visibility%>
-              </h5>
+              <h4 class="card-title">
+                <strong>
+                  <%=data.location%>
+                </strong>
+              </h4>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is
                 a little bit longer.</p>
-              <section class="col-md-12 col-sm-3">
-                <strong>Snow Report:
-                  <%=data.snow_report%>
-                </strong>
+
+              <section class="col-md-10 col-sm-8">
+                <strong>Snow Report:</strong>
+                <%=data.snow_report%>
+
               </section>
-              <section class="col-md-12 col-sm-3">
-                <strong>Conditions:
-                  <%=data.visibility%>
-                </strong>
+              <section class="col-md-10 col-sm-8">
+                <strong>Conditions:</strong>
+                <%=data.conditions%>
+
               </section>
-              <section class="col-md-12 col-sm-3">
-                <strong>Date:
-                  <%=data.date%>
-                </strong>
+              <section class="col-md-10 col-sm-8">
+                <strong>Date:</strong>
+                <%= data.date.toDateString() %>
+
               </section>
-              <section class="col-md-12 col-sm-3">
-                <strong>Time:
-                  <%=data.time%>
-                </strong>
+              <section class="col-md-10 col-sm-8">
+                <strong>Time:</strong>
+                <%= data.time %>
+
               </section>
             </div>
             <div class="card-footer" style="background-color: #efebda;">

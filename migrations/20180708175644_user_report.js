@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
         table.string('picture_url');
         table.string('location');
         table.string('snow_report');
-        table.string('visibility');
+        table.string('conditions');
         table.date('date');
         table.time('time');
 

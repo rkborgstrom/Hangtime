@@ -18,13 +18,14 @@ router.post('/post', (req, res, next) => {
         picture_url: req.body.picture,
         location: req.body.location,
         snow_report: req.body.snowreport,
+        conditions: req.body.conditions,
         date: req.body.date,
         time: req.body.time,
       
     }, '*')
   
-    .then((accounts) => {
-        res.render('index');
+    .then((user_report) => {
+        res.render('index', {user_report});
     })
   
     .catch((err) => {

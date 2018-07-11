@@ -1,29 +1,23 @@
 <% include partials/header %>
 
-
-    <main class="bg">
-        <form class="form-inline">
-            <label class="sr-only" for="inlineFormInputName2">Name</label>
-            <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
-
-            <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
-            <div class="input-group mb-2 mr-sm-2">
-                <div class="input-group-prepend">
-                    <div class="input-group-text">@</div>
+    <form>
+        <div class="container">
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="username"><strong>User Name</strong></label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
                 </div>
-                <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
             </div>
 
-            <div class="form-check mb-2 mr-sm-2">
-                <input class="form-check-input" type="checkbox" id="inlineFormCheck">
-                <label class="form-check-label" for="inlineFormCheck">
-                    Remember me
-                </label>
+            <div class="form-row">
+                <div class="form-group col-md-12">
+                    <label for="inputPassword4"><strong>Password</strong></label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
             </div>
-
-            <button type="submit" class="btn btn-primary mb-2">Submit</button>
-        </form>
-    </main>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+    </form>
 
 
     <% include partials/footer %>

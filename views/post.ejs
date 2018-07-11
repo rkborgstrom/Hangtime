@@ -1,60 +1,67 @@
 <% include partials/header %>
 
-  <section class='bg'>
+  <section class="form-bg d-flex justify-content-center">
     <form class="needs-validation" novalidate action="/post" method="POST">
-      <section class="form-bg">
-        <div class="form-row">
 
-          <div class="col-md-4 mb-3">
-            <label for="picture">Picture URL</label>
-            <input type="text" class="form-control" id="picture" placeholder="Insert .jpg image here" name="picture" required>
-            <div class="valid-feedback">
-              Looks good!
-            </div>
-          </div>
+      <div class="form-row">
 
-          <div class="col-md-4 mb-3">
-            <label for="location">Mountain</label>
-            <input type="text" class="form-control" id="location" placeholder="e.g. Park City Mountain" name="location" required>
-          </div>
-
-          <div class="col-md-4 mb-3">
-            <label for="username">Username</label>
-            <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
+        <div class="col-md-4 mb-3">
+          <label for="picture">Picture URL</label>
+          <input type="text" class="form-control" id="picture" placeholder="Insert image URL here" name="picture" required>
+          <div class="valid-feedback">
+            Looks good!
           </div>
         </div>
+
+        <div class="col-md-4 mb-3">
+          <label for="location">Mountain</label>
+          <input type="text" class="form-control" id="location" placeholder="e.g. Park City Mountain" name="location" required>
         </div>
-        <div class="form-row">
-          <div class="col-md-6 mb-3">
-            <label for="validationCustom03">Snow Report</label>
-            <input type="text" class="form-control" id="snowreport" name="snowreport" placeholder="e.g. 15 inches" required>
+
+        <div class="col-md-4 mb-3">
+          <label for="username">Username</label>
+          <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
+        </div>
+      </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="validationCustom03">Snow Report</label>
+          <input type="text" class="form-control" id="snowreport" name="snowreport" placeholder="e.g. 15 inches" required>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="date">Date</label>
+          <input type="date" class="form-control" id="date" name="date" placeholder="Date" required>
+          <div class="invalid-feedback">
+            Please provide a valid state.
           </div>
-          <div class="col-md-3 mb-3">
-            <label for="date">Date</label>
-            <input type="date" class="form-control" id="date" name="date" placeholder="Date" required>
-            <div class="invalid-feedback">
-              Please provide a valid state.
-            </div>
+        </div>
+        <div class="col-md-3 mb-3">
+          <label for="time">Time</label>
+          <input type="time" class="form-control" id="time" name="time" placeholder="Zip" required>
+          <div class="invalid-feedback">
+            Please provide a valid zip.
           </div>
-          <div class="col-md-3 mb-3">
-            <label for="time">Time</label>
-            <input type="time" class="form-control" id="time" name="time" placeholder="Zip" required>
-            <div class="invalid-feedback">
-              Please provide a valid zip.
-            </div>
+
+
+        </div>
+        <div class="input-group col-md-6 mb-3">
+          <label for="conditions">Conditions: &nbsp </label>
+          <select class="custom-select" name="conditions" id="conditions">
+            <option selected>Choose...</option>
+            <option value="Powder">Powder</option>
+            <option value="Slushy">Slushy</option>
+            <option value="Ice">Ice</option>
+          </select>
+          <div class="input-group-append">
+            <label class="input-group-text" for="conditions">Options</label>
           </div>
-          <div class="custom-control custom-radio">
-              <input type="radio" id="powder" name="powder" class="custom-control-input">
-              <label class="custom-control-label" for="powder">Powder</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input type="radio" id="slushy" name="slushy" class="custom-control-input">
-              <label class="custom-control-label" for="slushy">Slushy</label>
-            </div>
-        </div><br>
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </section>
-    </form>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="submit">Submit form</button>
+  </section>
+  </form>
   </section>
 
 
