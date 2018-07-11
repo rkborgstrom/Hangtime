@@ -7,41 +7,47 @@
       <br>
 
     </div>
-    <div class="deck-box">
-        <% for(data of user_report) { %>
-      <div class="card-deck">
-          
-        <div class="card">
-          <img class="card-img-top" src="../images/park_city.jpg" alt="Card image cap">
-          <div class="card-body">
-              
-            <h5 class="card-title">Park City <%=data.visibility%></h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-              little bit longer.</p>
-
-            <section class="col-6 col-sm-3">
-              <strong>Snow Report: <%=data.snow_report%></strong>
-            </section>
-            <section class="col-6 col-sm-3">
-              <strong>Conditions: <%=data.visibility%></strong>
-            </section>
-            <section class="col-6 col-sm-3">
-              <strong>Date: <%=data.date%></strong>
-            </section>
-            <section class="col-6 col-sm-3">
-              <strong>Time: <%=data.time%></strong>
-            </section>
-          </div>
-         
-          <div class="card-footer" style="background-color: #efebda;">
-            <small class="text-muted">Last updated 3 mins ago</small>
+    <div class="row">
+      <% for(data of user_report) { %>
+        <div class="col-6 mb-5 pr-5 pl-5">
+          <div class="card">
+            <img class="card-img-top" src="../images/park_city.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Park City
+                <%=data.visibility%>
+              </h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is
+                a little bit longer.</p>
+              <section class="col-md-12 col-sm-3">
+                <strong>Snow Report:
+                  <%=data.snow_report%>
+                </strong>
+              </section>
+              <section class="col-md-12 col-sm-3">
+                <strong>Conditions:
+                  <%=data.visibility%>
+                </strong>
+              </section>
+              <section class="col-md-12 col-sm-3">
+                <strong>Date:
+                  <%=data.date%>
+                </strong>
+              </section>
+              <section class="col-md-12 col-sm-3">
+                <strong>Time:
+                  <%=data.time%>
+                </strong>
+              </section>
+            </div>
+            <div class="card-footer" style="background-color: #efebda;">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
           </div>
         </div>
-        
+        <%}%>
+    </div>
 
-    </div>
-    <%}%>
-    </div>
+
 
     </div>
   </main>
