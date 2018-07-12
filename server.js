@@ -34,7 +34,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', (req, res, next) => {
-    res.render('index', {user_info: {}});
+    res.render('index', {user_info: []});
 })
 
 app.use('/index', index);
