@@ -14,8 +14,8 @@ const account = require('./routes/account');
 const login = require('./routes/login');
 const post = require('./routes/post');
 const profile = require('./routes/profile');
-const moment = require('moment');
-moment().format();
+// const moment = require('moment');
+// moment().format();
 
 
 app.set('views', path.join(__dirname, 'views'));
@@ -34,7 +34,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', (req, res, next) => {
-    res.render('index');
+    res.render('index', {user_info: {}});
 })
 
 app.use('/index', index);
