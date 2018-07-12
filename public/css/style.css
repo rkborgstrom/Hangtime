@@ -29,6 +29,7 @@ body {
 }
 
 .container2 {
+
     background-color: white;
     opacity: 0.9;
     width: 350px;
@@ -36,3 +37,14 @@ body {
     margin-top: 10%;
     box-shadow: 5px 5px black;
 }
+
+.flex {
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+

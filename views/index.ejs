@@ -1,34 +1,36 @@
 <% include partials/header %>
 
   <main class="container-fluid bg ">
-    <div class="title">
+    <section class="title">
       <br>
       <h1>Connecting riders from around the world</h1>
       <br>
 
-    </div>
-    <div class="row">
+    </section>
+    <section class="row">
       <% for(data of user_report) { %>
-        <div class="col-6 mb-5 pr-5 pl-5">
-          <div class="card">
+        <section class="col-6 mb-5 pl-4 pr-4 ">
+          <section class="card">
             <img class="card-img-top" href="<%=data.picture_url%>" src="<%=data.picture_url%>">
-            <div class="card-body">
+            <section class="card-body">
               <h4 class="card-title">
 
                 <strong>
-                  <h1 style="color: #318ac4;">
+                  <h1 class="d-flex justify-content-center" style="color: #318ac4;">
                     <%= data.location %>
                   </h1>
+
+                  <h4 class="pl-4">
+                    Posted By:
+                    <i>
+                      <%= data.username %>
+                    </i>
+                  </h4>
                 </strong>
-                <h4>
-                  <i>
-                    <%= data.username %>
-                  </i>
-                </h4>
 
                 <section class="container">
-                  <section class="row">
-                    <section class="col-md-6">
+                  <section class="row pl-2">
+                    <section class="col">
                       <h5>
                         <strong>Snow Report:</strong>
                         <%= data.snow_report %>
@@ -41,7 +43,7 @@
                         <%= data.conditions %>
                       </h5>
                     </section>
-                    <div class="w-100"></div>
+                    <section class="w-100"></section>
                     <section class="col">
                       <h5>
                         <strong>Date:</strong>
@@ -53,23 +55,26 @@
                         <strong>Time:</strong>
                         <%= data.time %>
                       </h5>
-
                     </section>
-
                   </section>
                 </section>
-            </div>
-            <div class="card-footer" style="background-color: #efebda;">
+
+
+                <h5 class='pl-4'>
+                  <strong>Message:</strong>
+                  <br>
+                  <%= data.textbox %>
+                </h5>
+
+            </section>
+            <section class="card-footer" style="background-color: #efebda;">
               <small class="text-muted">Last updated: </small>
-            </div>
-          </div>
-        </div>
+            </section>
+          </section>
+        </section>
         <%}%>
-    </div>
-
-
-
-    </div>
+    </section>
+    </section>
   </main>
   <script src="moment.js"></script>
 
