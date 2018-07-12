@@ -11,11 +11,6 @@ router.get('/post', (req, res) => {
   res.render('post', {title: 'Create An Account'}); //renders account ejs file
 });
 
-
-var moment = require('moment');
-exports.index = function(req, res) {
-    res.render('index', { moment: moment });
-}
 router.post('/post', (req, res, next) => {
     knex('user_report')
     .insert({
@@ -40,6 +35,33 @@ router.post('/post', (req, res, next) => {
     });
   });
 
+  
+  router.delete('/post/:id', (req, res, next) => {
+    let reports;
+  
+    knex('user_report')
+      .where('id', req.params.id)
+
+      .first()
+      .then((row) => {
+        if (!row) {
+          return next();
+        }
+  
+        reports = row;
+  
+        return knex('user_report')
+          .del()
+          .where('id', req.params.id);
+      })
+      .then(() => {
+        delete user_report.id;
+        res.send(post);
+      })
+      .catch((err) => {
+        next(err);
+      });
+  });
 
 
 
