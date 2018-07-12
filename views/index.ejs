@@ -1,6 +1,6 @@
 <% include partials/header %>
 
-  <main class="container-fluid bg">
+  <main class="container-fluid bg ">
     <div class="title">
       <br>
       <h1>Connecting riders from around the world</h1>
@@ -14,36 +14,53 @@
             <img class="card-img-top" href="<%=data.picture_url%>" src="<%=data.picture_url%>">
             <div class="card-body">
               <h4 class="card-title">
+
                 <strong>
-                  <%=data.location%>
+                  <h1 style="color: #318ac4;">
+                    <%= data.location %>
+                  </h1>
                 </strong>
-              </h4>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is
-                a little bit longer.</p>
+                <h4>
+                  <i>
+                    <%= data.username %>
+                  </i>
+                </h4>
 
-              <section class="col-md-10 col-sm-8">
-                <strong>Snow Report:</strong>
-                <%=data.snow_report%>
+                <section class="container">
+                  <section class="row">
+                    <section class="col-md-6">
+                      <h5>
+                        <strong>Snow Report:</strong>
+                        <%= data.snow_report %>
+                      </h5>
+                    </section>
 
-              </section>
-              <section class="col-md-10 col-sm-8">
-                <strong>Conditions:</strong>
-                <%=data.conditions%>
+                    <section class="col">
+                      <h5>
+                        <strong>Conditions:</strong>
+                        <%= data.conditions %>
+                      </h5>
+                    </section>
+                    <div class="w-100"></div>
+                    <section class="col">
+                      <h5>
+                        <strong>Date:</strong>
+                        <%= data.date.toDateString() %>
+                      </h5>
+                    </section>
+                    <section class="col">
+                      <h5>
+                        <strong>Time:</strong>
+                        <%= data.time %>
+                      </h5>
 
-              </section>
-              <section class="col-md-10 col-sm-8">
-                <strong>Date:</strong>
-                <%= data.date.toDateString() %>
+                    </section>
 
-              </section>
-              <section class="col-md-10 col-sm-8">
-                <strong>Time:</strong>
-                <%= data.time %>
-
-              </section>
+                  </section>
+                </section>
             </div>
             <div class="card-footer" style="background-color: #efebda;">
-              <small class="text-muted">Last updated 3 mins ago</small>
+              <small class="text-muted">Last updated: </small>
             </div>
           </div>
         </div>
@@ -54,6 +71,6 @@
 
     </div>
   </main>
-
+  <script src="moment.js"></script>
 
   <% include partials/footer %>

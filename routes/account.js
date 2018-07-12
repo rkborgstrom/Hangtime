@@ -20,9 +20,9 @@ router.post('/account', (req, res, next) => {
       password: req.body.password
   }, '*')
 
-  .then((accounts) => {
-      res.render('index');
-  })
+  .then((info) => {
+    res.render('profile', {info});
+})
 
   .catch((err) => {
       next(err);

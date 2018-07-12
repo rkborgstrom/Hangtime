@@ -11,12 +11,19 @@ router.get('/post', (req, res) => {
   res.render('post', {title: 'Create An Account'}); //renders account ejs file
 });
 
+
+var moment = require('moment');
+exports.index = function(req, res) {
+    res.render('index', { moment: moment });
+}
 router.post('/post', (req, res, next) => {
     knex('user_report')
     .insert({
         //left side is database columns, right side is 'names' in ejs file 
         picture_url: req.body.picture,
         location: req.body.location,
+        username: req.body.username,
+        textbox: req.body.textbox,
         snow_report: req.body.snowreport,
         conditions: req.body.conditions,
         date: req.body.date,

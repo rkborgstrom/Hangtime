@@ -18,6 +18,7 @@
           <input type="text" class="form-control" id="location" placeholder="e.g. Park City Mountain" name="location" required>
         </div>
 
+
         <div class="col-md-4 mb-3">
           <label for="username">Username</label>
           <input type="text" class="form-control" id="username" placeholder="Username" name="username" required>
@@ -38,7 +39,7 @@
         </div>
         <div class="col-md-3 mb-3">
           <label for="time">Time</label>
-          <input type="time" class="form-control" id="time" name="time" placeholder="Zip" required>
+          <input type="time" class="form-control" id="time" name="time" required>
           <div class="invalid-feedback">
             Please provide a valid zip.
           </div>
@@ -57,9 +58,13 @@
             <label class="input-group-text" for="conditions">Options</label>
           </div>
         </div>
-      </div>
 
-      <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+      <label for="textbox">Tell us about your day:</label>
+      <textarea class="input-group col-md-4 mb-3" id="textbox" name="textbox">
+      </textarea>
+
+      <button class="btn btn-primary" type="submit">Send it</button>
   </section>
   </form>
   </section>
