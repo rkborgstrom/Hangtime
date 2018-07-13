@@ -9,8 +9,7 @@ For my Q2 project, I am creating an application to allow users to input data fro
   * EJS 
   * Express Server 
   * Knex 
-  * Postgres 
-  * Database
+  * Postgres Database
 
   # MVP with listed user stories: 
 *	As a user, I need to be able to identify the company (logo/branding) 
@@ -30,12 +29,20 @@ For my Q2 project, I am creating an application to allow users to input data fro
 
 ![Show Data](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image3.jpg)
 
-# Design for Mobile: 
-
+# Design for Web: 
 ![Create Account](https://github.com/rkborgstrom/hangtime/blob/master/public/images/IMG_2300.PNG)
   
 ![Cards](https://github.com/rkborgstrom/hangtime/blob/master/public/images/IMG_2301.PNG)
 
 ![Nav](https://github.com/rkborgstrom/hangtime/blob/master/public/images/IMG_2302.PNG)
+
+
+
+
+# Design for Mobile: 
+
+![Create Account](https://github.com/rkborgstrom/hangtime/blob/master/public/images/mobile.jpg)
+
+
 
 
