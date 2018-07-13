@@ -29,3 +29,13 @@ For my Q2 project, I am creating an application to allow users to input data fro
 ![Forms](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image2.jpg)
 
 ![Show Data](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image3.jpg)
+
+#Design for Mobile: 
+
+![Create Account](https://github.com/rkborgstrom/hangtime/blob/master/public/images/IMG_2300.PNG)
+  
+![Cards](https://github.com/rkborgstrom/hangtime/blob/master/public/images/IMG_2301.PNG)
+
+![Nav](https://github.com/rkborgstrom/hangtime/blob/master/public/images/IMG_2302.PNG)
+
+
