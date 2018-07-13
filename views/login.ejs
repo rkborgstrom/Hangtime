@@ -1,24 +1,23 @@
 <% include partials/header %>
 
-    <form>
-        
+    <form action="/login" method="POST">
         <section class="container2">
-                <h1>Login</h1>
-            <section class="form-row">
-                <section class="form-group col-md-12">
+                
+                <section class="row">   
+                        <h1 class="col-md-9 col-md-push-3">Login</h1>
+            <section class="col-md-9 col-md-push-3">
                     <label for="username">User Name</label>
                     <input type="text" class="form-control" id="username" placeholder="Username">
-                </section>
             </section>
 
-            <section class="form-row">
-                <section class="form-group col-md-12">
+            <section class="col-md-9 col-md-push-3">
                     <label for="inputPassword4">Password</label>
                     <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                 </section>
-            </section>
-            <button type="submit" class="btn btn-primary">Sign in</button>
+                <section class="col-md-9 col-md-push-3">
+            <button type="submit" class="btn btn-primary ">Sign in</button>
         </section>
+    </section>
     </form>
 
 

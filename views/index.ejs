@@ -1,82 +1,87 @@
 <% include partials/header %>
 
-  <main class="container-fluid bg ">
+  <section class="contain">
     <section class="title">
       <br>
       <h1>Connecting riders from around the world</h1>
       <br>
 
     </section>
-    <section class="row">
-      <% for(data of user_report) { %>
-        <section class="col-6 mb-5 pl-4 pr-4 ">
-          <section class="card">
-            <img class="card-img-top" href="<%=data.picture_url%>" src="<%=data.picture_url%>">
-            <section class="card-body">
-              <h4 class="card-title">
+    <main class="container-fluid bg d-flex">
 
-                <strong>
-                  <h1 class="d-flex justify-content-center" style="color: #318ac4;">
-                    <%= data.location %>
-                  </h1>
+      <section class="row">
+        <% for(data of user_report) { %>
+          <section class="col-container">
+            <section class="col">
+              <section class="card">
+                <img class="card-img-top" href="<%=data.picture_url%>" src="<%=data.picture_url%>">
+                <section class="card-body">
+                  <h4 class="card-title">
 
-                  <h4 class="pl-4">
-                    Posted By:
-                    <i>
-                      <%= data.username %>
-                    </i>
-                  </h4>
-                </strong>
+                    <strong>
+                      <h1 class="d-flex justify-content-center" style="color: #318ac4;">
+                        <%= data.location %>
+                      </h1>
 
-                <section class="container">
-                  <section class="row pl-2">
-                    <section class="col">
-                      <h5>
-                        <strong>Snow Report:</strong>
-                        <%= data.snow_report %>
-                      </h5>
+                      <h4 class="pl-4">
+                        Posted By:
+                        <i>
+                          <%= data.username %>
+                        </i>
+                      </h4>
+                    </strong>
+
+                    <section class="container">
+                      <section class="row pl-2">
+                        <section class="col">
+                          <h5>
+                            <strong>Snow Report:</strong>
+                            <%= data.snow_report %>
+                          </h5>
+                        </section>
+
+                        <section class="col">
+                          <h5>
+                            <strong>Conditions:</strong>
+                            <%= data.conditions %>
+                          </h5>
+                        </section>
+                        <section class="w-100"></section>
+                        <section class="col">
+                          <h5>
+                            <strong>Date:</strong>
+                            <%= data.date.toDateString() %>
+                          </h5>
+                        </section>
+                        <section class="col">
+                          <h5>
+                            <strong>Time:</strong>
+                            <%= data.time %>
+                          </h5>
+                        </section>
+                      </section>
                     </section>
 
-                    <section class="col">
-                      <h5>
-                        <strong>Conditions:</strong>
-                        <%= data.conditions %>
-                      </h5>
-                    </section>
-                    <section class="w-100"></section>
-                    <section class="col">
-                      <h5>
-                        <strong>Date:</strong>
-                        <%= data.date.toDateString() %>
-                      </h5>
-                    </section>
-                    <section class="col">
-                      <h5>
-                        <strong>Time:</strong>
-                        <%= data.time %>
-                      </h5>
-                    </section>
-                  </section>
+
+                    <h5 class='pl-4'>
+                      <strong>Message:</strong>
+                      <br>
+                      <%= data.textbox %>
+                    </h5>
+
                 </section>
+                <section class="card-footer" style="background-color: #efebda;">
+                  <button class="btn btn-primary" name="delete" type="submit">Delete</button>
 
-
-                <h5 class='pl-4'>
-                  <strong>Message:</strong>
-                  <br>
-                  <%= data.textbox %>
-                </h5>
-
-            </section>
-            <section class="card-footer" style="background-color: #efebda;">
-                <button class="btn btn-primary" name="delete" type="submit">Delete</button>
-    
+                </section>
+              </section>
             </section>
           </section>
-        </section>
-        <%}%>
-    </section>
-    </section>
+          <%}%>
+      </section>
+  </section>
   </main>
+  </section>
 
 
   <% include partials/footer %>
