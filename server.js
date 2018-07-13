@@ -8,14 +8,15 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 8000;
 const knex = require('knex')(config);
+const bcryptjs = require('bcryptjs');
 const morgan = require('morgan');
 const index = require('./routes/index');
 const account = require('./routes/account');
 const login = require('./routes/login');
 const post = require('./routes/post');
 const profile = require('./routes/profile');
-// const moment = require('moment');
-// moment().format();
+
+
 
 
 app.set('views', path.join(__dirname, 'views'));
