@@ -29,10 +29,6 @@ For my Q2 project, I am creating an application to allow users to input data fro
 
 ![Show Data](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image3.jpg)
 
-# Design for Web: 
-
-
-
 
 # Design for Mobile: 
 
