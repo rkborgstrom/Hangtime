@@ -22,7 +22,7 @@ For my Q2 project, I am creating an application to allow users to input data fro
 *	As a user, I need to be able to create a secure password
 
 
-#mockups
+# mockups
 
 ![Create Account](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image1.jpg)
   
@@ -30,7 +30,7 @@ For my Q2 project, I am creating an application to allow users to input data fro
 
 ![Show Data](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image3.jpg)
 
-#Design for Mobile: 
+# Design for Mobile: 
 
 ![Create Account](https://github.com/rkborgstrom/hangtime/blob/master/public/images/IMG_2300.PNG)
   
