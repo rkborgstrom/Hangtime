@@ -11,7 +11,7 @@ For my Q2 project, I am creating an application to allow users to input data fro
   * Knex 
   * Postgres 
   * Database
-  
+
   # MVP with listed user stories: 
 *	As a user, I need to be able to identify the company (logo/branding) 
 *	As a user, I need to be able to post a picture 
@@ -23,8 +23,9 @@ For my Q2 project, I am creating an application to allow users to input data fro
 
 
 #mockups
-![Create Account](https://github.com/rkborgstrom/Q2-Project/blob/master/images/CreateAccount.jpg)
-  
-![Forms](https://github.com/rkborgstrom/Q2-Project/blob/master/images/Forms.jpg)
 
-![Show Data](https://github.com/rkborgstrom/Q2-Project/blob/master/images/ShowData.jpg)
+![Create Account](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image1.jpg)
+  
+![Forms](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image2.jpg)
+
+![Show Data](https://github.com/rkborgstrom/hangtime/blob/master/public/images/image3.jpg)
