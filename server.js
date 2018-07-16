@@ -10,14 +10,12 @@ const port = process.env.PORT || 8000;
 const knex = require('knex')(config);
 const bcryptjs = require('bcryptjs');
 const morgan = require('morgan');
+const moment = require('moment');
 const index = require('./routes/index');
 const account = require('./routes/account');
 const login = require('./routes/login');
 const post = require('./routes/post');
 const profile = require('./routes/profile');
-
-
-
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -25,8 +23,6 @@ app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, 'public')));
 app.disable('x-powered-by');
 app.use(morgan('short'));
-
-
 
 app.use(bodyParser.json());
 

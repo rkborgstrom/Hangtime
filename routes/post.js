@@ -47,9 +47,7 @@ router.post('/post', (req, res, next) => {
         if (!row) {
           return next();
         }
-  
         reports = row;
-  
         return knex('user_report')
           .del()
           .where('id', req.params.id);
