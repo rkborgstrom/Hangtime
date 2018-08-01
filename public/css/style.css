@@ -11,8 +11,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 500px;
     padding-bottom: 20px;
+}
+
+.card {
+    width: 290px;
 }
 
 .bg2 {
